@@ -52,9 +52,7 @@ function MenuMobile(){
         onClose={handleClose}
       >
         <MenuItem className={css(styles.menuItem)} 
-          onClick={() => handleNavigator('/home')}>Home</MenuItem>
-        <MenuItem className={css(styles.menuItem)} 
-          onClick={() => handleNavigator('/treinamento')}>Treinamento</MenuItem>
+          onClick={() => handleNavigator('/treinamento')}>Conselhor de amiga</MenuItem>
         <MenuItem className={css(styles.menuItem)} 
           onClick={() => handleNavigator('/solicitacoes')}>Artigos</MenuItem>
         <MenuItem className={css(styles.menuItem)} 

@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Typography from '@material-ui/core/Typography';
 import { useHistory } from "react-router-dom";

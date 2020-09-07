@@ -18,9 +18,10 @@
   --secondary-color-opacity: rgba(251, 192, 45, .8);
 
   --secondary-color-light:#fff263;
-  --secondary-color-dark:#c49000;
+  --secondary-color-dark:#d27402;
 
   --rosa-color: #ff66c4;
+  --rosa-light: #f992d0;
 
   --text-primary-color: #ffffff;
   --text-secondary-color: #000000;
@@ -287,3 +288,14 @@ content: "";
 clear: both;
 display: table;
 }
+
+.button-default {
+  background-color: '#f28500';
+  color: '#ffff';
+}
+
+.secondary-color-default {
+  background-color: '#f28500';
+  color: '#ffff';
+}
+

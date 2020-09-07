@@ -1,21 +1,15 @@
 import React from 'react';
-// import { StyleSheet
-//   , css 
-// } from 'aphrodite/no-important';
+// import { StyleSheet, css } from 'aphrodite/no-important';
 
-function EntrevistaForm () {
-
+function Vagas () {
     return (
       <h1>
-        Hello in entrevista Form,this is entrevista
+        Hello this is Vagas
       </h1>
     );
+}
 
-  } 
-
-
-export default EntrevistaForm;
-
+export default Vagas;
 
 // const styles = StyleSheet.create({
 //   headingText: {

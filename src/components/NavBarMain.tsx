@@ -4,25 +4,26 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import MenuMobile from './MenuMobile';
-import Chip from '@material-ui/core/Chip';
-import { NavLink, useLocation, useHistory } from "react-router-dom";
+import  Button  from '@material-ui/core/Button';
+import { NavLink, 
+  useLocation, 
+  // useHistory 
+} from "react-router-dom";
 import Logotipo from './Logotipo';
 
-function NavBarMain (){
+function NavBarMain (username: String){
 
-  const balance : number  = 3;
   // useSelector((state:ReduxState) => state.userData.balance);
-  const username: string = "Lora";
+  //const username: string = "Lora";
   // useSelector((state: ReduxState) => state.userData.name);
   const [currentPage, setCurrentPage] = useState(useLocation().pathname);
   //const dispatch = useDispatch();
-  let history = useHistory();
+  // let history = useHistory();
   let location = useLocation();
 
-  const handleNavigator = (redirectTo: string) => {
-    history.push(redirectTo);
-    
-  }
+  // const handleNavigator = (redirectTo: string) => {
+  //   history.push(redirectTo);
+  // }
 
   React.useEffect(() => {
     setCurrentPage(location.pathname);
@@ -45,7 +46,7 @@ function NavBarMain (){
                     to='/treinamento'
                     className={css(styles.navItem, 
                       currentPage === '/treinamento' ? styles.menuActive : styles.menuDisable ) }
-                    >Treinamento</NavLink>
+                    >Conselho de Amiga</NavLink>
 
 
                   <NavLink 
@@ -60,15 +61,25 @@ function NavBarMain (){
                       currentPage === '/vagas' ? styles.menuActive : styles.menuDisable) }
                     >Vagas</NavLink> 
 
-                  {/* { username !== ""? */}
+                   { username !== "" ? 
                     <div className={css(styles.contUsername)}>
-                        <Typography className={css(styles.username)}>{`Olá, ${username}`}</Typography>
-                        <div 
-                          className={css(styles.navItem) }
-                          onClick={() =>{}}
-                        >Sair</div>
+                      
+                      <Typography className={css(styles.username)}>{`Olá, ${username}`}</Typography>
+                      <div 
+                        className={css(styles.navItem) }
+                        onClick={() =>{}}
+                      >Sair</div>
                     </div>
-                </div>
+                    :
+                   
+                   <div className={css(styles.contUsername)}>
+                      <Button color="secondary">Entrar/Cadastrar</Button>
+                  </div>
+
+                  }
+
+                  </div>
+                
               </div>
 
               <div className={css(styles.sectionMobile)}>
