@@ -6,9 +6,16 @@ import { BrowserRouter as Router,
 import NavBarMain from './components/NavBarMain';
 import Footer from './components/Footer';
 import HomePage from './contents/HomePage';
-import EntrevistaForm from './contents/EntrevistaForm';
 import Vagas from './contents/Vagas/FeaturedVagas';
-const username = 'Rose'
+import SignIn  from './forms/SignIn';
+import SignUp from './forms/SignUpForms/SignUp';
+import FeaturedEntrevista from './contents/Treinamento/FeaturedEntrevista';
+import ScrollIntoView from './util/ScrollIntoView';
+import FeaturedArtigos from './contents/Artigos/FeaturedArtigos';
+import FormAgenda from './contents/Treinamento/EntrevistaForm';
+
+const username = ''
+
 function App() {
   return (
     <div className="App">
@@ -23,21 +30,26 @@ function App() {
           <Route exact path="/home">
             <HomePage/>
           </Route>
-
-          <Route exact path="/treinamento">
-            <EntrevistaForm/>
+          <Route  path="/entrar">
+            <SignIn/>
           </Route>
 
-          <Route exact path="/artigo">
-            <EntrevistaForm/>
+          <Route exact path="/cadastro">
+            <SignUp/>
           </Route>
 
-          <Route exact path="/entrevista">
-            <EntrevistaForm/>
+          <Route path="/treinamento" component={ScrollIntoView(FeaturedEntrevista)}/>
+
+          <Route path="/artigo">
+            <FeaturedArtigos/>
           </Route>
 
-          <Route exact path="/Vagas">
+          <Route path="/vagas">
             <Vagas/>
+          </Route>
+
+          <Route path="/agendar">
+            <FormAgenda/>
           </Route>
 
           </div>

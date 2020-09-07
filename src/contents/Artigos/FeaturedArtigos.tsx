@@ -8,6 +8,7 @@ import ArtigoItem from './ArtigoItem';
 import {ArtigoType} from '../../types';
 import andrea from '../../resources/andrea.jpg';
 import dashboard from '../../resources/dashboard.jpg';
+import cristina from '../../resources/pexels-christina.jpg';
 import { Typography } from '@material-ui/core';
 
 
@@ -20,6 +21,15 @@ const ArtigoList: ArtigoType[] = [
     linkText: 'Image',
     name:'Image',
     image:andrea,
+    imageText:'Image Text'
+  },
+  {
+    title: 'O que uma programadora precisa saber para conseguir sua primeira vaaga como DEV',
+    date: 'Nov 12',
+    description: 'Um dos maiores desafios de um novo programador é conseguir a primeira oportunidade como Desenvolvedor Junior',
+    linkText: 'Image',
+    name:'Image',
+    image:cristina,
     imageText:'Image Text'
   },
   {

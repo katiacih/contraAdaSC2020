@@ -10,19 +10,33 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import logo from '../resources/android-chrome-192x192.png';
+import {
+   useHistory 
+} from "react-router-dom";
 import '../App.css';
 
 
 
 export default function SignIn() {
 
+  let history = useHistory();
+  
+  const handleNavigator = (redirectTo: string) => {
+    history.push(redirectTo);
+  }
+
 
   return (
     <Container component="main" maxWidth="xs">
       <div className={css(styles.paper)}>
-        <Avatar className={css(styles.avatar)}>
+        {/* <Avatar className={css(styles.avatar)}>
           <LockOutlinedIcon />
-        </Avatar>
+        </Avatar> */}
+        <img style={{
+          width: '50px', 
+          height: '50px'}}
+          src={logo} alt="ContraAda"/>
         <Typography component="h1" variant="h5">
           Cadastre-se para começar
         </Typography>
@@ -50,13 +64,14 @@ export default function SignIn() {
             autoComplete="current-password"
           />
           <FormControlLabel
-            control={<Checkbox value="remember" className='secondary-color-default' />}
+            control={<Checkbox value="remember" style={{color: 'var(--secondary-color)'}} />}
             label="Lembrar-me"
           />
           <Button
             // type="submit"
             fullWidth
             variant="contained"
+            onClick = { () => handleNavigator('home')}
             className={css(styles.submit)}
           >
             Cadastrar
@@ -68,7 +83,9 @@ export default function SignIn() {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="#" 
+                onClick = { () => handleNavigator('cadastro')}
+                variant="body2">
                 {"Não possui uma conta? Cadastre-se"}
               </Link>
             </Grid>

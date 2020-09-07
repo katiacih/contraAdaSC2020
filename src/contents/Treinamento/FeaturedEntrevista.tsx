@@ -7,12 +7,18 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import  Button  from '@material-ui/core/Button';
 
+import { 
+  useLocation, 
+   useHistory 
+} from "react-router-dom";
+
 type processoType = {
   numero: string,
   title: string,
   description: string
 
 }
+
 
 
 const ProcessoList: processoType[] = [
@@ -30,6 +36,8 @@ const ProcessoList: processoType[] = [
 
 
 function ProcessoItem( { processo }:{processo: processoType} ) {
+
+
 
   return (
     <Grid item xs={12} md={6} >
@@ -55,7 +63,14 @@ function ProcessoItem( { processo }:{processo: processoType} ) {
 }
 
 
-export default function FeaturedVagas() {
+export default function FeaturedEntrevista() {
+
+  let history = useHistory();
+  let location = useLocation();
+
+  const handleNavigator = () => {
+    history.push('/agendar');
+  }
 
   return (
       <div className={css(styles.container)}>
@@ -69,6 +84,7 @@ export default function FeaturedVagas() {
             <Button
               variant="contained"
               className={css(styles.btn)}
+              onClick={handleNavigator}
               >Agendar</Button>
           </div>
         </div>

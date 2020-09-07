@@ -32,7 +32,7 @@ function DadosGerais() {
             autoComplete="family-name"
           />
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <TextField
             id="address2"
             name="address2"
@@ -79,7 +79,7 @@ function DadosGerais() {
             control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
             label="Quero receber todas as informações"
           />
-        </Grid>
+        </Grid> */}
       </Grid>
     </React.Fragment>
   );

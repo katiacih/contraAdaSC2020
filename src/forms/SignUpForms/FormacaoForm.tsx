@@ -102,8 +102,8 @@ function FormacaoForm() {
         <Grid item xs={12}>
         <FormLabel component="legend">Deseja se cadastrar como: </FormLabel>
           <RadioGroup aria-label="gender" name="gender1" value={tipoUsuario} onChange={handleChangTipoUsuario}>
-            <FormControlLabel value="candidata" control={<Radio />} label="Candidata" />
-            <FormControlLabel value="recrutadora" control={<Radio />} label="Recrutador(a)" />
+            <FormControlLabel value="candidata" control={<Radio />} label="Candidata(o)" />
+            <FormControlLabel value="recrutadora" control={<Radio />} label="Conselheira(o)" />
           </RadioGroup>
         </Grid>
        

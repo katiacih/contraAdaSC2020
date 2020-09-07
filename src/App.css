@@ -294,8 +294,25 @@ display: table;
   color: '#ffff';
 }
 
+.btn-default {
+  margin: 10px 0 30px;
+  border: '1px solid  #f28500';
+  background-color: '#f28500';
+  color: '#ffff';
+
+}
+.btn-default:hover {
+  background-color: '#f28500';
+}
+
 .secondary-color-default {
   background-color: '#f28500';
   color: '#ffff';
+}
+.flex-center {
+  display: flex;
+  align-items:center;
+  width: 100%;
+  justify-content: center;
 }
 

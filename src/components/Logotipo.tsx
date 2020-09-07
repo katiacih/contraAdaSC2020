@@ -14,10 +14,11 @@ function Logotipo () {
     history.push('/home');
   }
   return(
-    <div style={{display: 'flex', alignItems: 'center' }} 
+    <div style={{display: 'flex', alignItems: 'center', cursor: 'pointer' }} 
       onClick={() => GoToHome()} >
         <img style={{
           width: '50px', 
+
           height: '50px'}}
           src={logo} alt="ContraAda"/>
       

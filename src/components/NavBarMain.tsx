@@ -7,28 +7,25 @@ import MenuMobile from './MenuMobile';
 import  Button  from '@material-ui/core/Button';
 import { NavLink, 
   useLocation, 
-  // useHistory 
+   useHistory 
 } from "react-router-dom";
 import Logotipo from './Logotipo';
 
-function NavBarMain (username: String){
+function NavBarMain ( {username}: { username: String }){
 
-  // useSelector((state:ReduxState) => state.userData.balance);
-  //const username: string = "Lora";
-  // useSelector((state: ReduxState) => state.userData.name);
   const [currentPage, setCurrentPage] = useState(useLocation().pathname);
-  //const dispatch = useDispatch();
-  // let history = useHistory();
-  let location = useLocation();
 
-  // const handleNavigator = (redirectTo: string) => {
-  //   history.push(redirectTo);
-  // }
+  let history = useHistory();
+  let location = useLocation();
 
   React.useEffect(() => {
     setCurrentPage(location.pathname);
   }, [location]);
 
+  const handleNavigator = (redirectTo: string) => {
+    setCurrentPage(redirectTo)
+    history.push(redirectTo);
+  }
 
   return(
     <div className={css(styles.gridContent)}>
@@ -41,16 +38,17 @@ function NavBarMain (username: String){
               {/* Logotipo */}
                 <Logotipo/>
 
+                {console.log(currentPage)}
+
                 <div className={css(styles.subsectionDesktop)}>
                   <NavLink 
-                    to='/treinamento'
+                    to='/agendar'
                     className={css(styles.navItem, 
-                      currentPage === '/treinamento' ? styles.menuActive : styles.menuDisable ) }
+                      currentPage === '/agendar' ? styles.menuActive : styles.menuDisable ) }
                     >Conselho de Amiga</NavLink>
 
-
                   <NavLink 
-                    to='/artigos'
+                    to='/artigo'
                     className={css(styles.navItem, 
                       currentPage === '/artigos' ? styles.menuActive : styles.menuDisable) }
                     >Artigos</NavLink>
@@ -61,19 +59,22 @@ function NavBarMain (username: String){
                       currentPage === '/vagas' ? styles.menuActive : styles.menuDisable) }
                     >Vagas</NavLink> 
 
-                   { username !== "" ? 
+                   {
+                   ( username !== '' && username !== null )  ? 
                     <div className={css(styles.contUsername)}>
-                      
                       <Typography className={css(styles.username)}>{`Olá, ${username}`}</Typography>
                       <div 
                         className={css(styles.navItem) }
-                        onClick={() =>{}}
+                        
                       >Sair</div>
                     </div>
                     :
                    
                    <div className={css(styles.contUsername)}>
-                      <Button color="secondary">Entrar/Cadastrar</Button>
+                      <Button   
+                        className={css(styles.textButton)} 
+                        onClick={ () => handleNavigator('entrar')}
+                        color="secondary">Entrar/Cadastrar</Button>
                   </div>
 
                   }
@@ -203,6 +204,9 @@ const styles = StyleSheet.create({
       display: 'none',
     }
   },
+  textButton: {
+    textTransform: 'none'
+  }
   
 });
 

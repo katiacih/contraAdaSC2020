@@ -5,66 +5,97 @@ import { Typography } from '@material-ui/core';
 import  Button  from '@material-ui/core/Button';
 import FeaturedArtigos from './Artigos/FeaturedArtigos';
 import BannerLogo from '../resources/BannerLogo.svg';
+import imageVector from '../resources/image2.svg';
+import jumbo from '../resources/jumbo.jpg';
 import Paper from '@material-ui/core/Paper';
 import FeaturedVagas from './Vagas/FeaturedVagas';
 import FeaturedEntrevista from './Treinamento/FeaturedEntrevista';
+import { 
+  useLocation, 
+   useHistory 
+} from "react-router-dom";
+
 
 
 function HomePage () {
+
+  let history = useHistory();
+
+  const handleNavigatorEntrar = () => {
+    history.push('/entrar');
+  }
+
+
     return (
       <div className={css(styles.container)}>
 
-      {/* Seção 1 */}
-        <div className={css(styles.section1)}>
-
-          <div style={{display: 'flex'}}>
-
-            {/* Card Roxo */}
-            <Paper  elevation={3} className={css(styles.cardPink)}>
-              <Paper elevation={5} className={css(styles.cardPurple)}>
-                <Typography variant="h3" className={css(styles.titleCard)}>O que fazemos por você?</Typography>
-                <Typography 
-                  variant="caption" 
-                  display="block" 
-                  gutterBottom 
-                  style={{padding: '0px 60px', fontSize:'18px'}}
-                >Empoderamos mulheres, aceitamos quem elas são, e agregamos para que todas dentro do que são, sejam melhores no amanhã. Agende o seu conselho de amiga</Typography>
-                <Button
-                  variant="contained"
-                  className={css(styles.btn)}
-                >Começar Experiência</Button>
-              </Paper>
-            </Paper>
-            {/* Imagem  garotas*/}
-            <div className={css(styles.containerImage)}>
-              <img src={BannerLogo} alt='banner' />
-            </div>
-          </div>
-        </div>
-
-        {/* Seção Como funciona */}
-        <div className={css(styles.section)}>
+          {/* Seção  O QUE PODEMOS FAZER */}
+          <div className={css(styles.section, styles.oqueFazemos)}>
            {/* Imagem  garotas*/}
-          <div className={css(styles.containerImage)}>
-            <img src={BannerLogo} alt='banner' />
+          <div className={css(styles.containerImage)} >
+            <img className={css(styles.imageVector2)} src={imageVector} alt='banner' />
           </div>
           <Paper  elevation={3} className={css(styles.cardPink)}>
             <Paper elevation={5} className={css(styles.cardPurple)}>
-              <Typography variant="h3" className={css(styles.titleCard)}>O que fazemos por você?</Typography>
+              <Typography variant="h3" className={css(styles.titleCard)}>O que fazemos por você</Typography>
+              <Typography 
+                variant="caption" 
+                display="block" 
+                gutterBottom 
+                style={{padding: '0px 60px', fontSize:'18px'}}
+              >A plataforma ContratAda oferecerá oportunidades voltadas para o público feminino que deseja ingressar no mercado de trabalho em tecnologia, 
+              além de ofertar para as empresas a oportunidade de poder divulgar suas vagas. </Typography>
+              <Button
+                variant="contained"
+                className={css(styles.btn)}
+                onClick={handleNavigatorEntrar}
+              >Começar Experiência</Button>
+            </Paper>
+          </Paper>     
+        </div>
+
+        {/* Seção Porque*/}
+        <div className={css(styles.section1)}>
+        <div style={{display: 'flex', padding: '60px'}}>
+          <Paper  elevation={3} className={css(styles.cardPink)}>
+            <Paper elevation={5} className={css(styles.cardPurple)}>
+              <Typography variant="h3" className={css(styles.titleCard)}>Por quê?</Typography>
               <Typography 
                 variant="caption" 
                 display="block" 
                 gutterBottom 
                 style={{padding: '0px 60px', fontSize:'18px'}}
               >Empoderamos mulheres, aceitamos quem elas são, e agregamos para que todas dentro do que são, sejam melhores no amanhã. Agende o seu conselho de amiga</Typography>
-              <Button
-                variant="contained"
-                className={css(styles.btn)}
-              >Começar Experiência</Button>
             </Paper>
-          </Paper>        
+          </Paper>
+
+          {/* Imagem  garotas*/}
+          <div className={css(styles.containerImage)}>
+            <img src={BannerLogo} alt='banner' />
+          </div>
         </div>
-       
+      </div>
+
+        {/* Seção Como funciona */}
+        <div className={css(styles.section, styles.oqueFazemos)}>
+           {/* Imagem  garotas*/}
+          <div className={css(styles.containerImage)}>
+            <img src={jumbo} alt='banner' style={{height: '419px', width:'600px'}} />
+          </div>
+          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'spaceAround', flexDirection:'column'}}>
+            <Typography style={{ color: 'var(--primary-color)', marginBottom: '20px'}} variant="h3" className={css(styles.titleCard)}>Como funciona</Typography>
+              <Typography 
+                variant="caption" 
+                display="block" 
+                gutterBottom 
+                style={{padding: '0px 60px', fontSize:'18px'}}
+              > A plataforma conta com um aconselhamento de carreira (Conselho de Amiga) 
+              totalmente voltado para público feminino com o objetivo de auxiliar as candidatas a desenvolver confiança em entrevistas de emprego. Além disso, 
+              acompanhamos as candidatas tanto na preparação </Typography>
+            
+          </div>
+        </div>
+      
         
         {/* Seção Treinamento/Entrevistas*/}
         <div className={css(styles.section)}>
@@ -120,7 +151,7 @@ const styles = StyleSheet.create({
       margin: '0px',
       alignItems:'center',
       justifyContent: 'space-between',
-      backgroundColor: 'blue',
+      backgroundColor: 'transparent',
     }
   },
   cardPink: {
@@ -157,9 +188,12 @@ const styles = StyleSheet.create({
     '@media only screen and (max-width: 941px)':{
       display: 'none',
     }
-
+  },
+  oqueFazemos: {
+    display: 'flex',
 
   },
+
   titleCard:{
     padding: '10px 96px',
     '@media only screen and (max-width: 941px)':{
@@ -170,6 +204,33 @@ const styles = StyleSheet.create({
   },
   section1: {
     width: '100%',
+    '@media only screen and (max-width: 941px)':{
+      padding: '0px',
+     }
+  },
+  section2: {
+    width: '100%',
+    '@media only screen and (max-width: 941px)':{
+      padding: '0px',
+     }
+  },
+  sectionAgendamento: {
+    width: '100%',
+    '@media only screen and (max-width: 941px)':{
+      padding: '0px',
+     }
+  },
+  sectionArtigos: {
+    width: '100%',
+    '@media only screen and (max-width: 941px)':{
+      padding: '0px',
+     }
+  },
+  sectionVagas: {
+    width: '100%',
+    '@media only screen and (max-width: 941px)':{
+      padding: '0px',
+     }
   },
   section: {
     padding: '80px 0px',
@@ -217,5 +278,10 @@ const styles = StyleSheet.create({
       backgroundColor: 'blue',
     }
 
+  },
+  imageVector2: {
+    width: '600px',
+    height: '500px'
   }
+ 
 });
