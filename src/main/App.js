@@ -1,18 +1,19 @@
+
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import NavBarMain from './components/NavBarMain';
-import Footer from './components/Footer';
-import HomePage from './contents/HomePage';
-import Vagas from './contents/Vagas/FeaturedVagas';
-import SignIn  from './forms/SignIn';
-import SignUp from './forms/SignUpForms/SignUp';
-import FeaturedEntrevista from './contents/Treinamento/FeaturedEntrevista';
-import ScrollIntoView from './util/ScrollIntoView';
-import FeaturedArtigos from './contents/Artigos/FeaturedArtigos';
-import FormAgenda from './contents/Treinamento/EntrevistaForm';
+import NavBarMain from '../components/NavBarMain';
+import Footer from '../components/Footer';
+import HomePage from '../contents/HomePage';
+import Vagas from '../contents/Vagas/FeaturedVagas';
+import { SignIn } from '../presentation/pages/SignIn/index';
+import { SignUp } from '../presentation/pages/SignUp/index';
+import FeaturedEntrevista from '../contents/Treinamento/FeaturedEntrevista';
+import ScrollIntoView from '../util/ScrollIntoView';
+import FeaturedArtigos from '../contents/Artigos/FeaturedArtigos';
+import FormAgenda from '../contents/Treinamento/EntrevistaForm';
 
 const username = ''
 

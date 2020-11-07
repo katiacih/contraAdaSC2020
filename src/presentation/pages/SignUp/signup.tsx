@@ -1,8 +1,8 @@
 import React, {useState}  from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import DadosGerais from './DadosGerais';
+import DadosGerais from './dados-gerais';
 import Button from '@material-ui/core/Button';
-import FormacaoForm from './FormacaoForm';
+import FormacaoForm from './formacao-form';
 import { Typography } from '@material-ui/core';
 import Snackbar from '@material-ui/core/Snackbar';
 import {

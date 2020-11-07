@@ -8,11 +8,11 @@ import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import logo from '../resources/android-chrome-192x192.png';
+import logo from './android-chrome-192x192.png';
 import {
    useHistory 
 } from "react-router-dom";
-import '../App.css';
+import '../../../main/App.css';
 
 
 

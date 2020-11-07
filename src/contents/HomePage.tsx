@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import '../App.css';
+import '../main/App.css';
 import { Typography } from '@material-ui/core';
 import  Button  from '@material-ui/core/Button';
 import FeaturedArtigos from './Artigos/FeaturedArtigos';

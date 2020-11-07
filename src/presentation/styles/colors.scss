@@ -1,0 +1,44 @@
+
+
+
+
+$main-bg-color-light: rgb(224, 209, 209);
+$main-bg-color-white: #ffff;
+/* bg navbart e footer */
+$bg-navbar: #E0E0E0;
+$primary-color: #5e17eb;
+$primary-color-light: #00608E;
+$primary-color-dark:#00496A;
+$primary-color-default: #004F71;
+$secondary-color-default: #debb55; 
+
+$secondary-color: #f28500;
+$secondary-color-opacity: rgba(251, 192, 45, .8);
+$secondary-color-light:#fff263;
+$secondary-color-dark:#d27402;
+
+$pink-color: #ff66c4;
+$pink-light: #f992d0;
+
+$text-primary-color: #ffffff;
+$text-secondary-color: #000000;
+$text-shadow-primary: 1px 1px 3px rgba(0, 0, 0, 0.6);
+
+$surface-error-color: #B00020;
+$surface-enabled-color: #616161;
+$surface-hover-color: #BDBDBD;
+$surface-focused-color: #E0E0E0;
+
+$disabledBackground: #CCC;
+$disabledColor: #666; 
+
+$gradient-background: linear-gradient(to bottom, #e7f1f9, #ffffff);
+$gradient-background-blue-dark: linear-gradient(0deg, rgba(2,86,87,1) 0%, rgba(1,5,41,1) 100%);
+
+/*fonts and sizes*/
+$font-primary: Roboto, Helvetica, Arial, sans-serif;
+
+$content-height: calc(100vh - 56px);
+$top-positon: 56px;
+$content-height-padding: calc(100vh - 56px - 1em);
+
