@@ -3,11 +3,11 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import VagaItem from './VagaItem';
-import {VagaType} from '../../types';
+import VagaItem from './job-item';
+import { JobType } from './types';
 import { Typography } from '@material-ui/core';
 
-const VagasList: VagaType[] = [
+const JobsList: JobType[] = [
   {
     title: 'Dev Junior',
     date: 'Hoje',
@@ -57,8 +57,8 @@ export default function FeaturedVagas() {
             <Typography variant="caption" className={css(styles.title)}>Confira as vagas de emprego</Typography>
           </div>
           <Grid container spacing={4}>
-            {VagasList.map((vaga, i) => (
-              <VagaItem key={i} vaga={vaga} />
+            {JobsList.map((job, i) => (
+              <VagaItem key={i} job={job} />
             ))}
           </Grid>
         </main>

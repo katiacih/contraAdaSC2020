@@ -5,10 +5,10 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
-import {VagaType} from '../../types';
+import { JobType } from './types';
 
 
-function VagaItem( { vaga}:{vaga: VagaType} ) {
+function JobItem( {job}:{job: JobType} ) {
 
   return (
     <Grid item xs={12} md={6}>
@@ -17,16 +17,16 @@ function VagaItem( { vaga}:{vaga: VagaType} ) {
           <div className={css(styles.cardDetails)}>
             <CardContent>
             <Typography className={css(styles.title)} color="textSecondary" gutterBottom>
-            {vaga.empresa}
+            {job.empresa}
             </Typography>
               <Typography component="h2" variant="h5">
-                {vaga.title}
+                {job.title}
               </Typography>
               <Typography variant="subtitle1" color="textSecondary">
-                {vaga.date}
+                {job.date}
               </Typography>
               <Typography variant="subtitle1" paragraph>
-                {vaga.description}
+                {job.description}
               </Typography>
               <Typography variant="subtitle1" color="primary">
                 Quero me candidatar
@@ -40,7 +40,7 @@ function VagaItem( { vaga}:{vaga: VagaType} ) {
 }
 
 
-export default VagaItem;
+export default JobItem;
 
 
 const styles = StyleSheet.create({

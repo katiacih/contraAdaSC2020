@@ -8,7 +8,7 @@ import BannerLogo from '../resources/BannerLogo.svg';
 import imageVector from '../resources/image2.svg';
 import jumbo from '../resources/jumbo.jpg';
 import Paper from '@material-ui/core/Paper';
-import FeaturedVagas from './Vagas/FeaturedVagas';
+import FeaturedVagas from '../presentation/pages/jobs/featured-job';
 import FeaturedEntrevista from './Treinamento/FeaturedEntrevista';
 import { 
    useHistory 

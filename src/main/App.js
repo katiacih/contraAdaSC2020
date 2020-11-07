@@ -7,7 +7,7 @@ import { BrowserRouter as Router,
 import NavBarMain from '../components/NavBarMain';
 import Footer from '../components/Footer';
 import HomePage from '../contents/HomePage';
-import Vagas from '../contents/Vagas/FeaturedVagas';
+import Jobs from '../presentation/pages/jobs/featured-job';
 import { SignIn } from '../presentation/pages/signin/index';
 import { SignUp } from '../presentation/pages/signup/index';
 import FeaturedEntrevista from '../contents/Treinamento/FeaturedEntrevista';
@@ -46,7 +46,7 @@ function App() {
           </Route>
 
           <Route path="/vagas">
-            <Vagas/>
+            <Jobs/>
           </Route>
 
           <Route path="/agendar">

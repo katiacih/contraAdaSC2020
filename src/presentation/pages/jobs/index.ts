@@ -1,0 +1,1 @@
+export { default as FeaturedJobs } from './featured-job'
