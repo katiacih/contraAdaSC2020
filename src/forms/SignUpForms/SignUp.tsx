@@ -4,7 +4,7 @@ import DadosGerais from './DadosGerais';
 import Button from '@material-ui/core/Button';
 import FormacaoForm from './FormacaoForm';
 import { Typography } from '@material-ui/core';
-import Snackbar, { SnackbarOrigin } from '@material-ui/core/Snackbar';
+import Snackbar from '@material-ui/core/Snackbar';
 import {
   useHistory 
 } from "react-router-dom";

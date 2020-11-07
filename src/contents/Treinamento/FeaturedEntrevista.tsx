@@ -8,7 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import  Button  from '@material-ui/core/Button';
 
 import { 
-  useLocation, 
+
    useHistory 
 } from "react-router-dom";
 
@@ -66,7 +66,7 @@ function ProcessoItem( { processo }:{processo: processoType} ) {
 export default function FeaturedEntrevista() {
 
   let history = useHistory();
-  let location = useLocation();
+
 
   const handleNavigator = () => {
     history.push('/agendar');

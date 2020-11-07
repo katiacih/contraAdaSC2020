@@ -40,9 +40,9 @@ function EntrevistaForm () {
   const [horarioInicio, setHorarioInicio] =  React.useState<Date | null>(new Date('2020-10-24T10:11:54'));
   const [horarioFinal, setHorarioFinal] =  React.useState<Date | null>(new Date('2020-10-24T19:11:54'));
 
-  const [selectedDate, setSelectedDate] = React.useState<Date | null>(
-    new Date('2020-10-24T21:11:54'),
-  );
+  // const [selectedDate, setSelectedDate] = React.useState<Date | null>(
+  //   new Date('2020-10-24T21:11:54'),
+  // );
 
   const handleDataInicioChange = (date: Date | null) => {
     setDataInicio(date);

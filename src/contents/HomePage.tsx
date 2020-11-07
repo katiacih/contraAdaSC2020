@@ -11,7 +11,6 @@ import Paper from '@material-ui/core/Paper';
 import FeaturedVagas from './Vagas/FeaturedVagas';
 import FeaturedEntrevista from './Treinamento/FeaturedEntrevista';
 import { 
-  useLocation, 
    useHistory 
 } from "react-router-dom";
 
