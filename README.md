@@ -1,68 +1,129 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Projeto ContraAda
 
-In the project directory, you can run:
+Projeto criado para participar do desafio proposto pelo [MegaHackWomen](https://www.megahackwomen.com.br/) de 2020.
+Objetivo: Fazer o mercado de TI  um lugar para todos promovendo igualdade de gênero.
 
-### `yarn start`
+A plataforma ContratAda oferecerá oportunidades voltadas para o público feminino que deseja ingressar no mercado de trabalho em tecnologia, além de ofertar para as empresas a oportunidade de poder divulgar suas vagas.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Desafio Vtex - Equipe Filhas de Ada
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*O contexto de desigualdade de gênero ainda é enorme, apesar dos debates sobre o tema terem avançado muito. Entre 100 vagas no mercado de tecnologia, apenas 37 são ocupadas por mulheres, de acordo com o Cadastro Geral de Empregados e Desempregados (Caged). No mesmo setor, 46% delas dizem receber salários inferiores aos homens.
+O desafio da inclusão é um obstáculo a ser vencido. Para isso, convidamos você a pensar em como conseguimos usar a própria tecnologia e criar formas de atrair e auxiliar na integração de mulheres no mercado de tecnologia e diminuir as diferenças de gênero no setor.*
 
-### `yarn build`
+🚧   🚀 Em construção...  🚧
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tabela de conteúdos
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<!--ts-->
+* [Sobre Projeto](#Sobre)
+* [Tabela de Conteudo](#tabela-de-conteudo)
+* [Princípios](#principios)
+* [Bibliotecas e Ferramentas](#bibliotecas-e-ferramentas)
+* [Instalação](#instalacao)
+* [Status](#status)
+* [Informações Tecnicas](#informacoes-tecnicas)
+  * [Features](#features)
+  * [Tecnologias](#tecnologias)
+  * [Pré-requisitos](#pré-requisitos)
+  * [Rodando](#rodando)
+  * [Outras Dependências](#outras-dependências)
+  * [Rodando](#rodando)
+* [Author](#author)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+====================================================
 
-### `yarn eject`
+## Principios
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+🚧   🚀 Em construção...  🚧   
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Demonstração
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+🚧   🚀 Em construção...  🚧   
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Add Screenshots, github, imagens
 
-## Learn More
+## Bibliotecas e Ferramentas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* React
+* Typescript
+* Git
+* Jest
+* Axios
+* Webpack
+* NPM
+* React Hooks
+* Eslint
+* Standard Javascript Style
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!--te-->
 
-### Code Splitting
+## Status
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+🚧  ContratAda 🚀 Em construção...  🚧
 
-### Analyzing the Bundle Size
+## Informações Técnicas
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Features
 
-### Making a Progressive Web App
+- [x] Estrutura de diretórios
+- [x] Arquivo ReadMe
+- [ ] Conteudo de diretórios
+- [ ] Outros
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### 🛠 Tecnologias
 
-### Advanced Configuration
+As seguintes ferramentas foram usadas na construção do projeto:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+-[Node.js](https://nodejs.org/en/)
+-[React](https://pt-br.reactjs.org/)
+-[TypeScript](https://www.typescriptlang.org/)
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### Pré-requisitos
 
-### `yarn build` fails to minify
+Antes de iniciar instale:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-[ReactJs]
+
+-[Node](https://nodejs.org/en/)
+
+-[Typescript]() 
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### 🎲 Rodando
+
+```bash
+# Clone este repositório
+$ git clone 
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd pasta
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
+
+# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+```
+
+### Outras Dependências
+
+React-Router-Dom
+npm install @types/react-router-dom
+More (https://reactrouter.com/web/guides/quick-start)
+
+[MATERIAL-UI](https://material-ui.com/pt/)
+
+# Author
+
+Kátia Cibele 🚀❤️👋🏽 
+Entre em contato!
+![Badge](https://img.shields.io/badge/katiacih-entre%20em%20contato-green)
