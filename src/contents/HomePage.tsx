@@ -3,7 +3,7 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 import '../main/App.css';
 import { Typography } from '@material-ui/core';
 import  Button  from '@material-ui/core/Button';
-import FeaturedArtigos from './Artigos/FeaturedArtigos';
+import FeaturedArtigos from '../presentation/pages/articles/featured-article';
 import BannerLogo from '../resources/BannerLogo.svg';
 import imageVector from '../resources/image2.svg';
 import jumbo from '../resources/jumbo.jpg';

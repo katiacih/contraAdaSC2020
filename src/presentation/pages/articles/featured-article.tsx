@@ -3,17 +3,17 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import MainArtigo from './BannerArtigo';
-import ArtigoItem from './ArtigoItem';
-import {ArtigoType} from '../../types';
-import andrea from '../../resources/andrea.jpg';
-import dashboard from '../../resources/dashboard.jpg';
-import cristina from '../../resources/pexels-christina.jpg';
+import MainArtigo from './banner-artigo';
+import ArtigoItem from './article-item';
+import { ArticleType } from './types';
+import andrea from './resources/andrea.jpg';
+import dashboard from './resources/dashboard.jpg';
+import cristina from './resources/pexels-christina.jpg';
 import { Typography } from '@material-ui/core';
 
 
 
-const ArtigoList: ArtigoType[] = [
+const ArtigoList: ArticleType[] = [
   {
     title: 'Como ser mais confiante',
     date: 'Nov 12',

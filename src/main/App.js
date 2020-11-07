@@ -8,11 +8,11 @@ import NavBarMain from '../components/NavBarMain';
 import Footer from '../components/Footer';
 import HomePage from '../contents/HomePage';
 import Vagas from '../contents/Vagas/FeaturedVagas';
-import { SignIn } from '../presentation/pages/SignIn/index';
-import { SignUp } from '../presentation/pages/SignUp/index';
+import { SignIn } from '../presentation/pages/signin/index';
+import { SignUp } from '../presentation/pages/signup/index';
 import FeaturedEntrevista from '../contents/Treinamento/FeaturedEntrevista';
 import ScrollIntoView from '../util/ScrollIntoView';
-import FeaturedArtigos from '../contents/Artigos/FeaturedArtigos';
+import { FeaturedArticle } from '../presentation/pages/articles';
 import FormAgenda from '../contents/Treinamento/EntrevistaForm';
 
 const username = ''
@@ -42,7 +42,7 @@ function App() {
           <Route path="/treinamento" component={ScrollIntoView(FeaturedEntrevista)}/>
 
           <Route path="/artigo">
-            <FeaturedArtigos/>
+            <FeaturedArticle/>
           </Route>
 
           <Route path="/vagas">

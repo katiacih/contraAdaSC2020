@@ -7,10 +7,10 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
-import {ArtigoType} from '../../types';
+import {ArticleType} from './types';
 
 
-function ArtigoItem( { article}:{article: ArtigoType} ) {
+function ArticleItem( { article}:{article: ArticleType} ) {
 
   return (
     <Grid item xs={12} md={6}>
@@ -42,7 +42,7 @@ function ArtigoItem( { article}:{article: ArtigoType} ) {
 }
 
 
-export default ArtigoItem;
+export default ArticleItem;
 
 
 const styles = StyleSheet.create({

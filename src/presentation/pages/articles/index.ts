@@ -1,0 +1,1 @@
+export { default as FeaturedArticle } from './featured-article'
