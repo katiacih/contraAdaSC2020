@@ -6,14 +6,14 @@ import { BrowserRouter as Router,
 } from 'react-router-dom';
 import NavBarMain from '../components/NavBarMain';
 import Footer from '../components/Footer';
-import HomePage from '../contents/HomePage';
+import { HomePage } from '../presentation/pages/home/index';
 import Jobs from '../presentation/pages/jobs/featured-job';
 import { SignIn } from '../presentation/pages/signin/index';
 import { SignUp } from '../presentation/pages/signup/index';
-import FeaturedEntrevista from '../contents/Treinamento/FeaturedEntrevista';
+import FeaturedEntrevista from '../presentation/pages/training/featured-interview';
 import ScrollIntoView from '../util/ScrollIntoView';
 import { FeaturedArticle } from '../presentation/pages/articles';
-import FormAgenda from '../contents/Treinamento/EntrevistaForm';
+import FormAgenda from '../presentation/pages/training/interview-form';
 
 const username = ''
 

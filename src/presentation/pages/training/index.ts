@@ -1,0 +1,1 @@
+export { default as FeaturedInterview } from './featured-interview'

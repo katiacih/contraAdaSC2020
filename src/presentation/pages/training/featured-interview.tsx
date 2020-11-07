@@ -5,23 +5,16 @@ import { Typography } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
-import  Button  from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
+import { processType } from './types';
 
 import { 
-
    useHistory 
 } from "react-router-dom";
 
-type processoType = {
-  numero: string,
-  title: string,
-  description: string
-
-}
 
 
-
-const ProcessoList: processoType[] = [
+const ProcessoList: processType[] = [
   {
     numero: '1',
     title: 'Cadastrar seus dados',
@@ -35,10 +28,7 @@ const ProcessoList: processoType[] = [
 ]
 
 
-function ProcessoItem( { processo }:{processo: processoType} ) {
-
-
-
+function ProcessoItem( { processo }:{processo: processType} ) {
   return (
     <Grid item xs={12} md={6} >
       <CardActionArea component="a" href="#">
@@ -63,7 +53,7 @@ function ProcessoItem( { processo }:{processo: processoType} ) {
 }
 
 
-export default function FeaturedEntrevista() {
+export default function FeaturedInterview() {
 
   let history = useHistory();
 

@@ -1,18 +1,18 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import '../main/App.css';
+import '../../../main/App.css';
 import { Typography } from '@material-ui/core';
 import  Button  from '@material-ui/core/Button';
-import FeaturedArtigos from '../presentation/pages/articles/featured-article';
-import BannerLogo from '../resources/BannerLogo.svg';
-import imageVector from '../resources/image2.svg';
-import jumbo from '../resources/jumbo.jpg';
+import FeaturedArtigos from '../articles/featured-article';
 import Paper from '@material-ui/core/Paper';
-import FeaturedVagas from '../presentation/pages/jobs/featured-job';
-import FeaturedEntrevista from './Treinamento/FeaturedEntrevista';
+import FeaturedVagas from '../jobs/featured-job';
+import FeaturedEntrevista from '../training/featured-interview';
 import { 
-   useHistory 
+  useHistory 
 } from "react-router-dom";
+import BannerLogo  from './resources/BannerLogo.svg';
+import imageVector from './resources/image2.svg';
+import jumbo from './resources/jumbo.jpg';
 
 
 

@@ -5,7 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Paper from '@material-ui/core/Paper';
-import '../../main/App.css';
+import '../../../main/App.css';
 import DateFnsUtils from '@date-io/date-fns';
 import {
   MuiPickersUtilsProvider,
@@ -15,7 +15,7 @@ import {
 import FormLabel from '@material-ui/core/FormLabel';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import  Button  from '@material-ui/core/Button';
-import cristina2 from '../../resources/cristina2.jpg';
+import cristina2 from './resources/cristina2.jpg';
 
 import { 
    useHistory 
