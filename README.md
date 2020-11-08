@@ -125,5 +125,5 @@ More (https://reactrouter.com/web/guides/quick-start)
 # Author
 
 Kátia Cibele 🚀❤️👋🏽 
-Entre em contato!
+Entre em contato!  
 ![Badge](https://img.shields.io/badge/katiacih-entre%20em%20contato-green)
