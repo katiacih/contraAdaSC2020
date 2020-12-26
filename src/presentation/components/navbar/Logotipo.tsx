@@ -2,8 +2,6 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Typography from '@material-ui/core/Typography';
 import { useHistory } from "react-router-dom";
-// import { SvgIcon } from '@material-ui/core';
-// import {ReactComponent as Logo} from './logosvg.svg';
 import logo from './android-chrome-192x192.png';
 
 
@@ -22,9 +20,6 @@ function Logotipo () {
           height: '50px'}}
           src={logo} alt="ContraAda"/>
       
-       {/* <SvgIcon viewBox="0 0 650 700">
-         <Logo/>
-       </SvgIcon> */}
       <Typography   
         className={css(styles.contrat)}
         variant='h4'

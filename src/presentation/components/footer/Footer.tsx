@@ -3,9 +3,7 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
-
-
-function Footer () {
+export function Footer () {
 
   return(
     <div className={css(styles.footer)}>
@@ -21,9 +19,7 @@ function Footer () {
     </div>
 
   );
-
 }
-export default Footer;
 
 const styles = StyleSheet.create({
 

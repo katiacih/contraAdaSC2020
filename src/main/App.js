@@ -4,8 +4,8 @@ import './App.css';
 import { BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import NavBarMain from '../components/NavBarMain';
-import Footer from '../components/Footer';
+import NavBarMain from '../presentation/components/navbar/NavBarMain';
+import { Footer } from '../presentation/components/footer/Footer';
 import { HomePage } from '../presentation/pages/home/index';
 import Jobs from '../presentation/pages/jobs/featured-job';
 import { SignIn } from '../presentation/pages/signin/index';
