@@ -15,15 +15,36 @@ O desafio da inclusão é um obstáculo a ser vencido. Para isso, convidamos voc
 
 🚧   🚀 Em construção...  🚧
 
+## Solução apresentada - Equipe Filhas de Ada
+
+A plataforma ContratAda oferecerá oportunidades voltadas para o público feminino que deseja ingressar no mercado de trabalho em tecnologia, além de ofertar para as empresas a oportunidade de divulgar suas vagas.
+
+Serviços da plataforma que será oferecido a todas as assinantes.
+
+
+#### Oportunidades de trabalho/vaga
+Vagas serão disponibilizadas para mulheres com qualquer nível de experiência, desde estágio até pleno e sênior.
+
+#### Recomendações de empresas "good place to work"
+
+Iremos listar empresas que possuem recomendações de mulheres que já trabalham e empresas que visam a inclusão de minorias.
+
+#### Conselho de amiga
+A plataforma irá oferecer aconselhamentos que irão auxiliar as mulheres no seu preparo para o mercado de trabalho.
+
+#### Melhoria do currículo
+Possibilidade de aperfeiçoamento do currículo. 
 ## Tabela de conteúdos
 
 <!--ts-->
 * [Sobre Projeto](#Sobre)
 * [Tabela de Conteudo](#tabela-de-conteudo)
+* [Participantes](#author)
 * [Princípios](#principios)
+* [Demonstração](#demonstracao)
 * [Bibliotecas e Ferramentas](#bibliotecas-e-ferramentas)
-* [Instalação](#instalacao)
 * [Status](#status)
+* [Instalação](#instalacao)
 * [Informações Tecnicas](#informacoes-tecnicas)
   * [Features](#features)
   * [Tecnologias](#tecnologias)
@@ -34,6 +55,13 @@ O desafio da inclusão é um obstáculo a ser vencido. Para isso, convidamos voc
 * [Author](#author)
 
 ====================================================
+
+# Participantes da equipe Filhas de ADA
+Karoline de Moura Farias
+Emilly Horta
+Beatriz
+Kátia Cibele
+
 
 ## Principios
 
@@ -125,11 +153,6 @@ More (https://reactrouter.com/web/guides/quick-start)
 [MATERIAL-UI](https://material-ui.com/pt/)
 
 
-# Participantes da equipe Filhas de ADA
-Karoline de Moura Farias
-Emilly Horta
-Beatriz
-Kátia Cibele
 
 # Author do código
 
