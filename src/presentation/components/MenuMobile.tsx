@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
       backgroundColor: 'var(--primary-color)',
     },
     ':active': {
-      olor: 'var(--text-primary-color)',
+      color: 'var(--text-primary-color)',
       backgroundColor: 'var(--primary-color)',
     },
   },

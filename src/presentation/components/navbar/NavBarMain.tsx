@@ -1,14 +1,15 @@
 import React from 'react';
-import { StyleSheet, css } from 'aphrodite';
+import { StyleSheet, css } from 'aphrodite/no-important';
 import AppBar from '@material-ui/core/AppBar';
 import Grid from '@material-ui/core/Grid';
 import { ToolbarCustom } from './toolbar'
 
+
 function NavBarMain ( {username}: { username: String }){
 
   return(
-    <Grid>
-      <AppBar position={"relative"} className={css(styles.appBar)}>
+    <Grid className={css(styles.root)}>
+      <AppBar position={"relative"} color={'transparent'} className={css(styles.appBar)}>
         <ToolbarCustom username={username}/>
       </AppBar>
       </Grid>
@@ -19,8 +20,11 @@ function NavBarMain ( {username}: { username: String }){
 export default NavBarMain;    
     
 const styles = StyleSheet.create({
+  root: {
+    backgroundColor: '$bg-navbar',
+  },
   appBar: {
-    backgroundColor: '$pink-color !important',
+    backgroundColor: '$bg-navbar',
   }
 });
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite/no-important';
 import '../../../main/App.css';
 import { Typography } from '@material-ui/core';
-import  Button  from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 import FeaturedArtigos from '../articles/featured-article';
 import Paper from '@material-ui/core/Paper';
 import FeaturedVagas from '../jobs/featured-job';
@@ -13,8 +13,31 @@ import {
 import BannerLogo  from './resources/BannerLogo.svg';
 import imageVector from './resources/image2.svg';
 import jumbo from './resources/jumbo.jpg';
+import womanBusiness1 from './resources/businesswoman.jpg'
+import womanBusiness2 from './resources/business-finance.jpg'
+import smilingWoman from './resources/smiling-woman.jpg'
+import { Slider } from '../../components/slide/slider'
 
-
+const slideData = [
+  {
+    index: 0,
+    headline: 'Esteja preparada para tudo!',
+    textButton: 'Esteja preparada para tudo!',
+    src: womanBusiness1
+  },
+  {
+    index: 1,
+    headline: 'Você pode ser tudo que quiser.',
+    textButton: 'Você pode ser tudo que quiser.',
+    src: womanBusiness2
+  },
+  {
+    index: 2,
+    headline: 'Seu sucesso é o nosso sucesso.',
+    textButton: 'Seu sucesso é o nosso sucesso.',
+    src: smilingWoman
+  }
+]
 
 function HomePage () {
 
@@ -25,10 +48,15 @@ function HomePage () {
   }
 
 
+
     return (
       <div className={css(styles.container)}>
-
-          {/* Seção  O QUE PODEMOS FAZER */}
+        {/* Propaganda e Slide */}
+        <div className={css(styles.section, styles.oqueFazemos)}>
+          <Slider slides={slideData} />
+       
+        </div>
+          {/* Seção  O fazemos por voce */}
           <div className={css(styles.section, styles.oqueFazemos)}>
            {/* Imagem  garotas*/}
           <div className={css(styles.containerImage)} >
@@ -41,7 +69,7 @@ function HomePage () {
                 variant="caption" 
                 display="block" 
                 gutterBottom 
-                style={{padding: '0px 60px', fontSize:'18px'}}
+                style={{padding: '0px 60px', fontSize:'14px'}}
               >A plataforma ContratAda oferecerá oportunidades voltadas para o público feminino que deseja ingressar no mercado de trabalho em tecnologia, 
               além de ofertar para as empresas a oportunidade de poder divulgar suas vagas. </Typography>
               <Button
@@ -63,7 +91,7 @@ function HomePage () {
                 variant="caption" 
                 display="block" 
                 gutterBottom 
-                style={{padding: '0px 60px', fontSize:'18px'}}
+                style={{padding: '0px 60px', fontSize:'14px'}}
               >Empoderamos mulheres, aceitamos quem elas são, e agregamos para que todas dentro do que são, sejam melhores no amanhã. Agende o seu conselho de amiga</Typography>
             </Paper>
           </Paper>
@@ -87,7 +115,7 @@ function HomePage () {
                 variant="caption" 
                 display="block" 
                 gutterBottom 
-                style={{padding: '0px 60px', fontSize:'18px'}}
+                style={{padding: '0px 60px', fontSize:'14px'}}
               > A plataforma conta com um aconselhamento de carreira (Conselho de Amiga) 
               totalmente voltado para público feminino com o objetivo de auxiliar as candidatas a desenvolver confiança em entrevistas de emprego. Além disso, 
               acompanhamos as candidatas tanto na preparação </Typography>
@@ -195,6 +223,7 @@ const styles = StyleSheet.create({
 
   titleCard:{
     padding: '10px 96px',
+    fontFamily: 'Josefin Sans, sans-serif',
     '@media only screen and (max-width: 941px)':{
       padding: '20px 0px',
       fontSize:'32px',

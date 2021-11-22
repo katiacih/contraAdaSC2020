@@ -27,8 +27,7 @@ export function ToolbarCustom ( {username}: { username: String }){
   }
 
   return(
-  <Toolbar className={css(styles.toolbar)}>
-            
+  <Toolbar className={css(styles.toolbar)}>     
     {/* Inicio Section Web */}
     <div className={ css(styles.sectionDesktop)}>
       <Logotipo/>
@@ -66,6 +65,7 @@ export function ToolbarCustom ( {username}: { username: String }){
             <div className={css(styles.contUsername)}>
               <Button   
                 className={css(styles.textButton)} 
+                variant='contained'
                 onClick={ () => handleNavigator('entrar')}
                 color="secondary">Entrar/Cadastrar</Button>
           </div>
@@ -95,10 +95,7 @@ const styles = StyleSheet.create({
     flex: '1',
   },
   toolbar: {
-    minHeight: 80,
-    alignItems: 'flex-start',
-    paddingTop: '8px',
-    paddingBottom: '12px'
+    alignItems: 'flex-start'
   },
   contUsername: {
     display: 'inline-flex',
@@ -113,10 +110,10 @@ const styles = StyleSheet.create({
     textOverflow: 'ellipsis'
   },
   menuActive: {
-    borderBottom : '3px solid var(--rosa-color)' ,
+    borderBottom : '3px solid $pink-color' ,
   },
   menuDisable: {
-    borderBottom: 'var(--bg-navbar) solid 3px',
+    borderBottom: '$bg-navbar solid 3px',
   },
   navItem: {
     float: 'left',
@@ -126,7 +123,7 @@ const styles = StyleSheet.create({
     margin: '0px 10px',
     padding: '0px',
     textDecoration: 'none',
-    fontSize: '17px',
+    fontSize: '13px',
     borderBottom: 'transparent solid 3px',
     transition: 'border-bottom 0.15s',
 
@@ -163,6 +160,7 @@ const styles = StyleSheet.create({
 
     '@media only screen and (min-width: 900px)':{
       display: 'flex',
+      padding: '10px 0px',
       width: '100%',
       alignItems:'center',
       justifyContent: 'space-between',

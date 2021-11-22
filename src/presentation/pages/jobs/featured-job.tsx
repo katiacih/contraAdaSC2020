@@ -9,35 +9,35 @@ import { Typography } from '@material-ui/core';
 
 const JobsList: JobType[] = [
   {
-    title: 'Dev Junior',
+    title: 'Pessoa Desenvolvedora Backend',
     date: 'Hoje',
     description: '',
-    salario: 'R$ 7k',
-    empresa: 'FabircaDevs',
-    contato: '11 3245-245',
-    email: 'fabricaDevs@emial.com',
+    salario: 'R$ 5k',
+    empresa: 'SummerTech',
+    contato: '11 1141-0110',
+    email: 'SummerTech@emial.com',
 
   
   },
   {
-    title: 'Dev Junior',
+    title: 'Pessoa Desenvolvedora Senior',
     date: 'Hoje',
     description: '',
-    salario: 'R$ 7k',
-    empresa: 'FabircaDevs',
-    contato: '11 3245-245',
-    email: 'fabricaDevs@emial.com',
+    salario: 'R$ 10k',
+    empresa: 'ForteNova',
+    contato: '11 0101-5414',
+    email: 'ForteNova@email.com',
     
   
   },
   {
-    title: 'Dev Junior',
+    title: 'Cientista de dados',
     date: 'Hoje',
     description: '',
-    salario: 'R$ 7k',
-    empresa: 'FabircaDevs',
-    contato: '11 3245-245',
-    email: 'fabricaDevs@emial.com',
+    salario: 'R$ 12k',
+    empresa: 'IndieDevsTool',
+    contato: '11 1234-3444',
+    email: 'IndieDevsTool@mail.com',
     
   
   },

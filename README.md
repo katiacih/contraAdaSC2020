@@ -40,10 +40,10 @@ O desafio da inclusão é um obstáculo a ser vencido. Para isso, convidamos voc
 🚧   🚀 Em construção...  🚧   
 
 ### Demonstração
+![gif](https://github.com/katiacih/ContratAda/tree/main/demo/demonstracao.gif)
 
-🚧   🚀 Em construção...  🚧   
+![gif](demo/demonstracao.gif)
 
-Add Screenshots, github, imagens
 
 ## Bibliotecas e Ferramentas
 
@@ -70,8 +70,10 @@ Add Screenshots, github, imagens
 
 - [x] Estrutura de diretórios
 - [x] Arquivo ReadMe
-- [ ] Conteudo de diretórios
-- [ ] Outros
+- [x] Conteudo de diretórios
+- [x] Formulários
+- [x] Resources
+- [ ] Teste
 
 ### 🛠 Tecnologias
 
@@ -122,7 +124,14 @@ More (https://reactrouter.com/web/guides/quick-start)
 
 [MATERIAL-UI](https://material-ui.com/pt/)
 
-# Author
+
+# Participantes da equipe Filhas de ADA
+Karoline de Moura Farias
+Emilly Horta
+Beatriz
+Kátia Cibele
+
+# Author do código
 
 Kátia Cibele 🚀❤️👋🏽 
 Entre em contato!
