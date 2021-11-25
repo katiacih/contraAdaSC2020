@@ -13,7 +13,6 @@ A plataforma ContratAda oferecerá oportunidades voltadas para o público femini
 *O contexto de desigualdade de gênero ainda é enorme, apesar dos debates sobre o tema terem avançado muito. Entre 100 vagas no mercado de tecnologia, apenas 37 são ocupadas por mulheres, de acordo com o Cadastro Geral de Empregados e Desempregados (Caged). No mesmo setor, 46% delas dizem receber salários inferiores aos homens.
 O desafio da inclusão é um obstáculo a ser vencido. Para isso, convidamos você a pensar em como conseguimos usar a própria tecnologia e criar formas de atrair e auxiliar na integração de mulheres no mercado de tecnologia e diminuir as diferenças de gênero no setor.*
 
-🚧   🚀 Em construção...  🚧
 
 ## Solução apresentada - Equipe Filhas de Ada
 
@@ -57,10 +56,10 @@ Possibilidade de aperfeiçoamento do currículo.
 ====================================================
 
 # Participantes da equipe Filhas de ADA
-Karoline de Moura Farias
-Emilly Horta
-Beatriz
-Kátia Cibele
+- Beatriz   
+- Emilly Horta   
+- Kátia Cibele   
+- Karoline de Moura Farias   
 
 
 ## Principios
@@ -79,7 +78,7 @@ Kátia Cibele
 * Typescript
 * Git
 * Jest
-* Axios
+* Axios (A Utilizar)
 * Webpack
 * NPM
 * React Hooks
@@ -101,8 +100,10 @@ Kátia Cibele
 - [x] Conteudo de diretórios
 - [x] Formulários
 - [x] Resources
-- [ ] Teste
-
+- [ ] Configuração com banco
+- [ ] Autenticação
+- [ ] Testes Unitários (React Testing Library)
+- [ ] Testes de Integração (Cypress)
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
@@ -116,11 +117,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Antes de iniciar instale:
 
--[ReactJs]
+-[ReactJs](https://pt-br.reactjs.org/)
 
 -[Node](https://nodejs.org/en/)
 
--[Typescript]() 
+-[Typescript](https://www.typescriptlang.org/) 
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
@@ -153,9 +154,8 @@ More (https://reactrouter.com/web/guides/quick-start)
 [MATERIAL-UI](https://material-ui.com/pt/)
 
 
-
 # Author do código
 
 Kátia Cibele 🚀❤️👋🏽 
 Entre em contato!  
-![Badge](https://img.shields.io/badge/katiacih-entre%20em%20contato-green)
+![Badge](https://img.shields.io/badge/katiacih-Dev%20Front%20end%20-pink)
