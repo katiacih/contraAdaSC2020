@@ -153,7 +153,6 @@ More (https://reactrouter.com/web/guides/quick-start)
 [MATERIAL-UI](https://material-ui.com/pt/)
 
 
-
 # Author do código
 
 Kátia Cibele 🚀❤️👋🏽 
