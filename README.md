@@ -57,10 +57,10 @@ Possibilidade de aperfeiçoamento do currículo.
 ====================================================
 
 # Participantes da equipe Filhas de ADA
-Karoline de Moura Farias
-Emilly Horta
-Beatriz
-Kátia Cibele
+Karoline de Moura Farias   
+Emilly Horta   
+Beatriz   
+Kátia Cibele   
 
 
 ## Principios
