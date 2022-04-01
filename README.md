@@ -1,3 +1,5 @@
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+
 
 # Projeto ContraAda
 
@@ -155,6 +157,6 @@ More (https://reactrouter.com/web/guides/quick-start)
 
 # Author do código
 
-Kátia Cibele 🚀❤️👋🏽 
+Kátia Cibele 
 Entre em contato!  
-![Badge](https://img.shields.io/badge/katiacih-entre%20em%20contato-green)
+![Badge](https://img.shields.io/badge/Elas-tambem%20codam-green)
